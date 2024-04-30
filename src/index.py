@@ -31,9 +31,9 @@ def receta3():
 def receta4():
 	return render_template("panArtesanal.html")
 
-@app.route("/cervezaGengigbre")
+@app.route("/cervezaGengibre")
 def receta5():
-	return render_template("/cervezaGengigbre.html")
+	return render_template("/cervezaGengibre.html")
 
 if __name__ == "__main__":
 
