@@ -12,7 +12,4 @@
         "dest": "src/index.py"
       }
     ],
-    "engines":[ {
-    "node": "18.x"
-  }],
   }
