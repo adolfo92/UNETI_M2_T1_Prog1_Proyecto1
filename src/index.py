@@ -19,6 +19,10 @@ def home():
 def receta1():
 	return render_template("CremaDeAjoporro.html")
 
+@app.route("/PanDeJamon")
+def receta2():
+	return render_template("PanDeJamon.html")
+
 
 if __name__ == "__main__":
 
