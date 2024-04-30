@@ -1,1 +1,11 @@
 /*Estilos de sustitución para bootstrap*/
+
+/*Imagenes de recetas*/
+#fotoReceta{
+    width: 33%;
+    max-width: 600px;
+    min-width: 300px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit:cover;
+}

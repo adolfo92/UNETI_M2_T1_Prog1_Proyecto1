@@ -9,7 +9,7 @@
 
 </head>
 <body class="bg-light">
-    <div class="card mt-0 mb-0 ms-0 border-top-0 border-start-0 border-end-0">
+    <div class="card mt-0 mb-0 ms-0 border-top-0 border-start-0 border-end-0" id="Top">
         <div class="header text-bg-dark pt-2 pb-1 ps-3">
             
                 <a href="/" class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"><h3 class="card-title col-md-5">Mi recetario</h5></a>
@@ -18,12 +18,49 @@
         </div>
     </div>
 
-    <div id="imageWrapper">
-        <img src="{{ url_for('static', filename='imagenes/cremAjop.jpg') }}" class="img-fluid" alt="Sopa de ajoporro" id="fotoComida">
+<!-------------------TITULO---------------->
+    <div class="ps-5 pt-3">
+        <h1 class="display-2">Crema de ajoporro</h1>
     </div>
 
+<!-------------------IMAGEN DE RECETA---------------->
+    <div id="imageWrapper" class="d-flex justify-content-center mt-3">
+        <img src="{{ url_for('static', filename='imagenes/cremAjop.jpg') }}" class="img-fluid border border-dark-subtle border-4" alt="Sopa de ajoporro" id="fotoReceta">
+    </div>
 
-    <img src="" alt="">
+<!-------------------INGREDIENTES Y RECETA---------------->
+    <section class="row mt-5 mb-5 container-fluid justify-content-center">
+<!-------------------INGREDIENTES---------------->
+        <div class="ingredientes col-md-3 mx-2">
+            <ul class="list-group">
+                <li class="list-group-item list-group-item-info active" aria-current="true"><h3>Ingredientes</h3></li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+                <li class="list-group-item">A fourth item</li>
+                <li class="list-group-item">And a fifth one</li>
+              </ul>
+        </div>
+<!-------------------RECETA--------------->
+        <div class="receta col-md-8 mx-1">
+            <ul class="list-group">
+                <li class="list-group-item active" aria-current="true"><h3>Preparacion</h3></li>
+                <li class="list-group-item">
+
+                    <ol class="list-group list-group-numbered">
+<!-------------------PASOS---------------->
+                        <li class="list-group-item">A list item</li>
+                        <li class="list-group-item">A list item</li>
+                        <li class="list-group-item">A list item</li>
+
+                      </ol>
+
+                </li>
+        
+              </ul>
+
+        </div>
+    </section>
     
+    <button class="btn btn-primary mx-3 mb-5"><a href="#Top" class="fs-3 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Inicio</a></button>
 </body>
 </html>
