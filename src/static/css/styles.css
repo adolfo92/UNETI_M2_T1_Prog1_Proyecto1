@@ -1,5 +1,6 @@
 /*Estilos de sustitución para bootstrap*/
 
+
 /*Imagenes de recetas*/
 #fotoReceta{
     width: 33%;
@@ -8,4 +9,16 @@
     aspect-ratio: 1 / 1;
     border-radius: 50%;
     object-fit:cover;
+}
+
+#indexwelcome{
+    height: calc(100vh - 60px) ;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    font-weight: 600;
+}
+
+#indexwelcome>div{
+    grid-row: 2/ 3;
+    text-align: center;
 }

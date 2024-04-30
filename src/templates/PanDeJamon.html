@@ -5,18 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <title>Pan de jamon</title>
 
 </head>
 <body class="bg-light">
-    <div class="card mt-0 mb-0 ms-0 border-top-0 border-start-0 border-end-0" id="Top">
-        <div class="header text-bg-dark pt-2 pb-1 ps-3">
-            
-                <a href="/" class="link-light link-offset-2 link-underline-opacity-10 link-underline-opacity-100-hover"><h3 class="card-title col-md-5">Mi recetario</h5></a>
-                <p class="card-text mt-2 mb-1 col-md-6">Un respaldo digital de mis recetas favoritas</p>
-
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme='dark'>
+        <div class="container-fluid">
+          <a class="navbar-brand my-auto" href="/">Mi Recetario</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+           
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Recetas
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/">Home</a></li>
+                  <li><a class="dropdown-item " href="/CremaDeAjoporro">Crema deAjoporro</a></li>
+                  <li><a class="dropdown-item" href="/cervezaGengibre">Cerveza de Gengibre</a></li>
+                  <li><a class="dropdown-item" href="/panArtesanal">Pan artesanal</a></li>
+                  <li><a class="dropdown-item active" href="/PanDeJamon">Pan de jamon</a></li>
+                  <li><a class="dropdown-item" href="/PolloHorneado">Pollo horneado</a></li>
+                  <li><a class="dropdown-item" href="/Yogurt">Yogurt</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
-    </div>
+      </nav>
 
 <!-------------------TITULO---------------->
     <div class="ps-5 pt-3">

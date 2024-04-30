@@ -5,11 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <title>Recetario-Home</title>
 
 </head>
-<body>
-   <h1>INDEX</h1>
-    <a href="/CremaDeAjoporro">aaa</a>
+<body background="{{ url_for('static', filename='imagenes/cool-background.svg') }}" style="background-repeat: no-repeat; background-size: cover;">
+    
+  
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme='dark'>
+        <div class="container-fluid">
+          <p class="navbar-brand my-auto" href="#">Mi Recetario</p>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+           
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Recetas
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item active" href="/">Home</a></li>
+                  <li><a class="dropdown-item" href="/CremaDeAjoporro">Crema deAjoporro</a></li>
+                  <li><a class="dropdown-item" href="/cervezaGengibre">Cerveza de Gengibre</a></li>
+                  <li><a class="dropdown-item" href="/panArtesanal">Pan artesanal</a></li>
+                  <li><a class="dropdown-item" href="/PanDeJamon">Pan de jamon</a></li>
+                  <li><a class="dropdown-item" href="/PolloHorneado">Pollo horneado</a></li>
+                  <li><a class="dropdown-item" href="/Yogurt">Yogurt</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+<div id="indexwelcome">
+  <div>
+  <h1 class="display-1">Bienvenidos a mi recetario</h1>
+  <p>
+    Un espacio que sirve como respaldo digital para las recetas que llevo escritas a mano y regadas por todos lados.
+  </p>
+</div>
+</div>
+    
+
+ 
+
+
 </body>
 </html>
