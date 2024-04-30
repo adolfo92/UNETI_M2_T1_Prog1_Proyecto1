@@ -35,6 +35,10 @@ def receta4():
 def receta5():
 	return render_template("/cervezaGengibre.html")
 
+@app.route("/Yogurt")
+def receta6():
+	return render_template("/Yogurt.html")
+
 if __name__ == "__main__":
 
 	app.run(debug=True, port=4000)
