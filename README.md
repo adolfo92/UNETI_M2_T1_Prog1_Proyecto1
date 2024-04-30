@@ -1,1 +1,7 @@
-Proyecto de página web con bootstrap y Flask
+# Proyecto de página web
+## bootstrap
+como libreria de css
+## Flask
+como backend
+
+**Desplegado en Vercel**
