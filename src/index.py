@@ -23,6 +23,10 @@ def receta1():
 def receta2():
 	return render_template("PanDeJamon.html")
 
+@app.route("/PolloHorneado")
+def receta3():
+	return render_template("PolloHorneado.html")
+
 
 if __name__ == "__main__":
 

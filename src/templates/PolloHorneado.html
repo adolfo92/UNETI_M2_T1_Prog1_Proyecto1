@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Pollo Horneado</title>
+
+</head>
+<body class="bg-light">
+    <div class="card mt-0 mb-0 ms-0 border-top-0 border-start-0 border-end-0" id="Top">
+        <div class="header text-bg-dark pt-2 pb-1 ps-3">
+            
+                <a href="/" class="link-light link-offset-2 link-underline-opacity-10 link-underline-opacity-100-hover"><h3 class="card-title col-md-5">Mi recetario</h5></a>
+                <p class="card-text mt-2 mb-1 col-md-6">Un respaldo digital de mis recetas favoritas</p>
+
+        </div>
+    </div>
+
+<!-------------------TITULO---------------->
+    <div class="ps-5 pt-3">
+        <h1 class="display-2">Pollo Horneado</h1>
+    </div>
+
+<!-------------------IMAGEN DE RECETA---------------->
+    <div id="imageWrapper" class="d-flex justify-content-center mt-3">
+        <img src="{{ url_for('static', filename='imagenes/polloHorn.jpg') }}" class="img-fluid border border-dark-subtle border-4" alt="Sopa de ajoporro" id="fotoReceta">
+    </div>
+
+<!-------------------INGREDIENTES Y RECETA---------------->
+    <section class="row mt-5 mb-5 container-fluid justify-content-center">
+<!-------------------INGREDIENTES---------------->
+        <div class="ingredientes col-md-3 mx-2">
+            <ul class="list-group">
+                <li class="list-group-item list-group-item-info active" aria-current="true"><h3>Ingredientes</h3></li>
+                <li class="list-group-item">2 muslos de pollo</li>
+                <li class="list-group-item">3 dientes de ajo blanco grandes</li>
+                <li class="list-group-item">2 cucharaditas de pimenton rojo dulce</li>
+                <li class="list-group-item">1/2 cucharadita de pasta de ají picante</li>
+                <li class="list-group-item">1/8 de taza de Vinagre</li>
+                <li class="list-group-item">1/4 de taza de agua</li>
+                <li class="list-group-item">Sal al gusto</li>
+                <li class="list-group-item">Pimienta al gusto</li>
+                <li class="list-group-item">Tomillo al gusto</li>
+
+              </ul>
+        </div>
+<!-------------------RECETA--------------->
+        <div class="receta col-md-8 mx-1">
+            <ul class="list-group">
+                <li class="list-group-item active" aria-current="true"><h3>Preparacion</h3></li>
+                <li class="list-group-item">
+
+                    <ol class="list-group list-group-numbered">
+<!-------------------PASOS---------------->
+                        <li class="list-group-item">Se tuesta el pimentón rojo en polvo en un sarten a fuego medio/bajo hasta que oscurezca un poquito.</li>
+                        <li class="list-group-item">Se coloca el pimentón luego en la licuadora con el ajo, el picante, el agua y el vinagre (usar el agua en la sartén con el pimentón para remover pimentón adherido)</li>
+                        <li class="list-group-item">Se licúa todo y esto crea un adobo</li>
+                        <li class="list-group-item">Al adobo se le coloca la pimienta y el tomillo</li>
+                        <li class="list-group-item">Se agrega el adobo al pollo y se deja macerar Mínimo 3horas y máximo 16 o se amarga el tomillo</li>
+                        <li class="list-group-item">Se calienta una sartén hasta que esté screaming hot con solo un poco de aceite</li>
+                        <li class="list-group-item">Ahí sin bajar la llama se agrega el muslo uno a la vez hasta que esté dorado y se da la vuelta hasta que esté dorado por el otro</li>
+                        <li class="list-group-item">Una vez que ambos pollos estén dorados se procede a meterlos al horno a una temperatura de aproximadamente 150ºC</li>
+                        <li class="list-group-item">Se les va agregando el adobo líquido que reservamos previamente poco a poco, es decir, se agregar por arriba, esperamos a que se seque y luego volteamos el.pollo y agregamos otra vez adobo por arriba</li>
+                        <li class="list-group-item">Procurar que la última cocción sea con la piel viendo hacia arriba para buscar que quede crujiente si se puede.</li>
+                        <li class="list-group-item">Luego desglasear el adobo seco de la bandeja con vinagre y mantequilla o vino blanco</li>
+                        <li class="list-group-item">Servir con el desglaseado como salsa</li>
+
+                      </ol>
+
+                </li>
+        
+              </ul>
+
+        </div>
+    </section>
+    
+    <button class="btn btn-primary mx-3 mb-5"><a href="#Top" class="fs-4 link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">Inicio</a></button>
+</body>
+</html>
